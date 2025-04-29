@@ -1,123 +1,62 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的梦核空间</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Helvetica Neue", "微软雅黑", sans-serif;
-            background: linear-gradient(180deg, #f6f7fb 0%, #e8ecf5 100%);
-            color: #444;
-            overflow-x: hidden;
-        }
-        header {
-            text-align: center;
-            padding: 60px 20px 20px;
-        }
-        h1 {
-            font-size: 48px;
-            font-weight: 300;
-            color: #555;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-        }
-        p.subtitle {
-            font-size: 18px;
-            color: #777;
-            margin-top: 0;
-        }
-        section {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            font-size: 32px;
-            font-weight: 300;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
-        .photo img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-            display: block;
-            margin: 0 auto 20px;
-        }
-        .content-block {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(8px);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        p {
-            line-height: 1.8;
-            font-size: 17px;
-        }
-        footer {
-            text-align: center;
-            font-size: 14px;
-            color: #aaa;
-            margin: 60px 0 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>IRENE的虚拟世界</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: white;
+      color: #333;
+    }
+
+    header {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2em;
+      letter-spacing: 3px;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero {
+      width: 100%;
+      height: 100vh;
+      background-image: url('IMG_6770.jpeg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(2px);
+    }
+  </style>
 </head>
 <body>
-
+  <div class="hero">
+    <div class="overlay"></div>
     <header>
-        <h1>我的梦核小世界</h1>
-        <p class="subtitle">在这里，藏着我的星星、秘密和风。</p>
+      <h1>IRENE的虚拟世界</h1>
     </header>
-
-    <section class="photo">
-        <h2>我的照片</h2>
-        <div class="content-block">
-            <img src="7CC63604-0431-489B-A3D8-2EBF3FE840D5.png" alt="我的照片" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-            <p>这一张，是我某一天，在傍晚的时候拍的。天是软软的蓝色，风吹着很舒服。</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>日记</h2>
-        <div class="content-block">
-            <p>今天走在回家的路上，路灯像是奶油做的。  
-            我看到一只小猫，它在巷子里打着滚，软软的，像团云。  
-            有时候我觉得，世界其实很温柔，只是我们太着急了。</p>
-        </div>
-
-        <div class="content-block">
-            <p>最近喜欢上了夜晚泡一杯热牛奶，看旧旧的电视剧。  
-            有种回到小时候的安心感，就像什么事情都不用担心一样。</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>喜欢吃的</h2>
-        <div class="content-block">
-            <p>奶油蛋糕、葡萄味汽水、冒着热气的火锅，还有夜市里的烤香肠。  
-            好吃的东西，总是让我觉得，世界值得一爱。</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>我喜欢的一切</h2>
-        <div class="content-block">
-            <p>我喜欢秋天微凉的风，喜欢雨后地上的彩虹泡泡，喜欢旧照相机拍下来的模糊画面，喜欢穿着宽大卫衣窝在沙发上的自己。</p>
-            <p>喜欢黑夜里突然亮起的窗户，喜欢公交车驶过水洼时的溅起的光，喜欢凌晨三点钟还在发光的小小城市。</p>
-        </div>
-    </section>
-
-    <footer>
-        © 2025 我的梦核空间 ｜ 梦见温柔和星光
-    </footer>
-
+  </div>
 </body>
 </html>
