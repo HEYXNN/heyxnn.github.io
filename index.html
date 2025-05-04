@@ -15,6 +15,7 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       background-color: white;
       color: #333;
+      overflow-x: hidden;
     }
 
     header {
@@ -54,39 +55,36 @@
     .nav-buttons {
       position: absolute;
       bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
+      padding: 0 20px;
       z-index: 10;
       display: flex;
-      flex-wrap: wrap;
+      gap: 15px;
+      overflow-x: auto;
+      white-space: nowrap;
       justify-content: center;
-      gap: 12px;
-      padding: 0 10px;
-      max-width: 100%;
+    }
+
+    .nav-buttons::-webkit-scrollbar {
+      display: none; /* 隐藏滚动条 */
     }
 
     .nav-button {
-      padding: 10px 18px;
+      flex: 0 0 auto;
+      padding: 10px 20px;
       background-color: rgba(255, 255, 255, 0.6);
       border-radius: 10px;
       text-decoration: none;
       color: #000;
       font-weight: bold;
       font-size: 14px;
-      white-space: nowrap;
       transition: background-color 0.3s;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
     .nav-button:hover {
       background-color: rgba(255, 255, 255, 0.8);
-    }
-
-    @media (max-width: 600px) {
-      .nav-button {
-        font-size: 13px;
-        padding: 8px 14px;
-      }
     }
   </style>
 </head>
