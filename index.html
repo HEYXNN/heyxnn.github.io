@@ -2,6 +2,7 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IRENE</title>
   <style>
     * {
@@ -57,26 +58,35 @@
       transform: translateX(-50%);
       z-index: 10;
       display: flex;
-      gap: 15px;
       flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 0 10px;
+      max-width: 100%;
     }
 
     .nav-button {
-      padding: 10px 20px;
+      padding: 10px 18px;
       background-color: rgba(255, 255, 255, 0.6);
       border-radius: 10px;
       text-decoration: none;
       color: #000;
       font-weight: bold;
       font-size: 14px;
-      white-space: nowrap; /* 强制文字不换行 */
-      display: inline-block;
+      white-space: nowrap;
       transition: background-color 0.3s;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
     .nav-button:hover {
       background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 600px) {
+      .nav-button {
+        font-size: 13px;
+        padding: 8px 14px;
+      }
     }
   </style>
 </head>
