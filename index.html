@@ -63,38 +63,10 @@
       font-weight: bold;
       box-shadow: 0 0 8px rgba(0,0,0,0.2);
       transition: background-color 0.3s;
-      cursor: pointer;
     }
 
     .album-link:hover {
       background-color: rgba(255, 255, 255, 0.8);
-    }
-
-    .album-section {
-      display: none;
-      padding: 40px 20px;
-      background-color: white;
-      text-align: center;
-    }
-
-    .album-section h2 {
-      margin-bottom: 20px;
-      font-size: 1.5em;
-      letter-spacing: 2px;
-    }
-
-    .album-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .album-images img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -104,23 +76,7 @@
     <header>
       <h1>IRENE</h1>
     </header>
-    <div class="album-link" onclick="toggleAlbum()">相册</div>
+    <a href="album.html" class="album-link">相册</a>
   </div>
-
-  <div class="album-section" id="albumSection">
-    <h2>我的相册</h2>
-    <div class="album-images">
-      <img src="photo1.jpg" alt="作品1">
-      <img src="photo2.jpg" alt="作品2">
-      <img src="photo3.jpg" alt="作品3">
-    </div>
-  </div>
-
-  <script>
-    function toggleAlbum() {
-      const album = document.getElementById('albumSection');
-      album.style.display = album.style.display === 'none' || album.style.display === '' ? 'block' : 'none';
-    }
-  </script>
 </body>
 </html>
