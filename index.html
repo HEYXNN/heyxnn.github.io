@@ -50,28 +50,30 @@
       backdrop-filter: blur(2px);
     }
 
-    .link-group {
+    .nav-bar {
       position: absolute;
       bottom: 20px;
-      left: 20px;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 10;
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      gap: 15px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    .link-button {
-      background-color: rgba(255, 255, 255, 0.6);
-      padding: 10px 20px;
-      border-radius: 8px;
+    .nav-bar a {
       text-decoration: none;
       color: #000;
       font-weight: bold;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      padding: 6px 12px;
+      border-radius: 6px;
       transition: background-color 0.3s;
     }
 
-    .link-button:hover {
+    .nav-bar a:hover {
       background-color: rgba(255, 255, 255, 0.8);
     }
   </style>
@@ -82,13 +84,14 @@
     <header>
       <h1>IRENE</h1>
     </header>
-    <div class="link-group">
-      <a href="album.html" class="link-button">相册</a>
-      <a href="music.html" class="link-button">音乐</a>
-      <a href="food.html" class="link-button">食谱</a>
-      <a href="ootd.html" class="link-button">OOTD</a>
-      <a href="journal.html" class="link-button">手帐</a>
-      <a href="map.html" class="link-button">旅行地图</a>
+
+    <div class="nav-bar">
+      <a href="album.html">相册</a>
+      <a href="music.html">音乐</a>
+      <a href="food.html">食谱</a>
+      <a href="ootd.html">OOTD</a>
+      <a href="journal.html">手帐</a>
+      <a href="map.html">旅行地图</a>
     </div>
   </div>
 </body>
