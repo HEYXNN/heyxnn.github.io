@@ -58,16 +58,19 @@
       z-index: 10;
       display: flex;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .nav-button {
-      padding: 10px 18px;
+      padding: 10px 20px;
       background-color: rgba(255, 255, 255, 0.6);
       border-radius: 10px;
       text-decoration: none;
       color: #000;
       font-weight: bold;
       font-size: 14px;
+      white-space: nowrap; /* 强制文字不换行 */
+      display: inline-block;
       transition: background-color 0.3s;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
