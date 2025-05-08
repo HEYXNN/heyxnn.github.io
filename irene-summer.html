@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IRENE - 夏天</title>
+  <title>夏天 - IRENE</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      padding: 60px 20px 100px;
+      padding: 40px 20px 100px;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       background-color: #ffffff;
       color: #333;
@@ -16,27 +17,29 @@
 
     h1 {
       font-size: 2em;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .photo-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 0 10px;
-      max-width: 1000px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      max-width: 800px;
       margin: 0 auto;
     }
 
-    .photo-grid img {
+    .photo-grid a img {
       width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
       object-fit: cover;
+      transition: transform 0.2s;
     }
 
-    .back-album {
+    .photo-grid a:hover img {
+      transform: scale(1.03);
+    }
+
+    .back-link {
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -48,21 +51,25 @@
       font-size: 14px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
-
-    .back-album:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
   </style>
 </head>
 <body>
-  <h1>IRENE - 夏天</h1>
+  <h1>夏天</h1>
 
   <div class="photo-grid">
-    <img src="d18e3245d4a645c04111b8f4efaca58c.jpeg" alt="夏天1">
-    <img src="e4205577156af3559c722ace65c5c6ea.jpeg" alt="夏天2">
-    <img src="e07291d699a4f87aaeaed41ff28d51d5.jpeg" alt="夏天3">
+    <a href="d18e3245d4a645c04111b8f4efaca58c.jpeg" data-lightbox="summer" data-title="夏天 1">
+      <img src="d18e3245d4a645c04111b8f4efaca58c.jpeg" alt="夏天1" />
+    </a>
+    <a href="e4205577156af3559c722ace65c5c6ea.jpeg" data-lightbox="summer" data-title="夏天 2">
+      <img src="e4205577156af3559c722ace65c5c6ea.jpeg" alt="夏天2" />
+    </a>
+    <a href="e07291d699a4f87aaeaed41ff28d51d5.jpeg" data-lightbox="summer" data-title="夏天 3">
+      <img src="e07291d699a4f87aaeaed41ff28d51d5.jpeg" alt="夏天3" />
+    </a>
   </div>
 
-  <a href="irene.html" class="back-album">返回</a>
+  <a href="irene.html" class="back-link">返回</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
