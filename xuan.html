@@ -7,41 +7,53 @@
   <style>
     body {
       margin: 0;
-      padding: 40px 20px;
+      padding: 60px 20px;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-color: white;
+      background-color: #fff;
       color: #333;
       text-align: center;
     }
 
     h1 {
       font-size: 2em;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+    .date-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #444;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.2s;
     }
 
-    .photo-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    .date-button:hover {
+      background-color: #666;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .back-home:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <h1>XUAN 的相册</h1>
 
-  <div class="photo-grid">
-    <img src="06d6472d5ccd4aad940391f81d03ebbd.jpeg" alt="照片1">
-    <img src="48fd98729a257360c0775631c31db387.jpeg" alt="照片2">
-    <img src="cefe5a74f734ba49f5abd627e0af93c6.jpeg" alt="照片3">
-  </div>
+  <a href="#" class="date-button">2015.05.01</a>
+
+  <br>
+  <a href="album.html" class="back-home">← 返回相册</a>
 </body>
 </html>
