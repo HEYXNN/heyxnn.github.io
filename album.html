@@ -12,6 +12,7 @@
       background-color: white;
       color: #333;
       text-align: center;
+      position: relative;
     }
 
     h1 {
@@ -22,14 +23,14 @@
     .album-grid {
       display: flex;
       justify-content: center;
-      gap: 20px;
       flex-wrap: wrap;
+      gap: 20px;
     }
 
     .album {
       width: 30vw;
       max-width: 200px;
-      aspect-ratio: 1 / 1; /* 强制正方形 */
+      aspect-ratio: 1 / 1;
       border-radius: 12px;
       overflow: hidden;
       text-decoration: none;
@@ -59,6 +60,24 @@
       font-weight: bold;
       font-size: 16px;
     }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.2s;
+    }
+
+    .back-home:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
@@ -79,6 +98,13 @@
       <img src="IMG_8409.jpeg" alt="JANE 相册封面">
       <div class="album-name">JANE</div>
     </a>
+
+    <a href="irasutoya.html" class="album">
+      <img src="7CC63604-0431-489B-A3D8-2EBF3FE840D5.png" alt="いらすとや风格的图片">
+      <div class="album-name">いらすとや风格的图片</div>
+    </a>
   </div>
+
+  <a href="index.html" class="back-home">返回首页</a>
 </body>
 </html>
