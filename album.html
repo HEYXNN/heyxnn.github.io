@@ -3,46 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>相册 - IRENE</title>
+  <title>相册</title>
   <style>
     body {
       margin: 0;
-      padding: 60px 20px;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
       color: #333;
-      text-align: center;
-      position: relative;
-      background: url("IMG_4600.jpeg") no-repeat center center fixed;
-      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 40px;
-      color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+      text-align: center;
+      font-size: 28px;
+      margin-top: 40px;
     }
 
-    .album-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    .album-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
-      justify-items: center;
-      padding: 0 10px;
-      max-width: 680px; /* 限制整体宽度 */
-      margin: 0 auto;    /* 居中 */
+      padding: 40px 20px;
     }
 
     .album {
-      width: 100%;
-      max-width: 200px;
-      aspect-ratio: 1 / 1;
-      border-radius: 12px;
+      width: 160px;
+      height: 160px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
       overflow: hidden;
+      text-align: center;
       text-decoration: none;
-      color: #fff;
-      position: relative;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      color: #333;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
 
@@ -54,58 +51,55 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
 
-    .album-name {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 10px 0;
+    .album-label {
+      margin-top: 8px;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 14px;
     }
 
-    .back-home {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: #fff;
-      padding: 10px 16px;
-      border-radius: 8px;
+    .home-link {
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: 20px;
+    }
+
+    .home-link a {
       text-decoration: none;
+      color: #000;
       font-size: 14px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      background-color: #eee;
+      border-radius: 6px;
       transition: background-color 0.2s;
     }
 
-    .back-home:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+    .home-link a:hover {
+      background-color: #ccc;
     }
   </style>
 </head>
 <body>
   <h1>IRENE 的相册</h1>
 
-  <div class="album-grid">
-    <a href="irene.html" class="album">
-      <img src="IMG_6227.jpeg" alt="IRENE 相册封面">
-      <div class="album-name">IRENE</div>
-    </a>
-
+  <div class="album-container">
     <a href="xuan.html" class="album">
-      <img src="06d6472d5ccd4aad940391f81d03ebbd.jpeg" alt="XUAN 相册封面">
-      <div class="album-name">XUAN</div>
+      <img src="06d6472d5ccd4aad940391f81d03ebbd.jpeg" alt="XUAN" />
+      <div class="album-label">XUAN</div>
     </a>
-
-    <a href="jane.html" class="album">
-      <img src="IMG_8409.jpeg" alt="JANE 相册封面">
-      <div class="album-name">JANE</div>
+    <a href="#" class="album">
+      <img src="IMG_6227.jpeg" alt="IRENE" />
+      <div class="album-label">IRENE</div>
+    </a>
+    <a href="#" class="album">
+      <img src="IMG_8409.jpeg" alt="JANE" />
+      <div class="album-label">JANE</div>
     </a>
   </div>
 
-  <a href="index.html" class="back-home">返回首页</a>
+  <div class="home-link">
+    <a href="index.html">返回首页</a>
+  </div>
 </body>
 </html>
