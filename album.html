@@ -8,11 +8,9 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('IMG_9582.jpeg');
-      background-size: cover;
-      background-position: center;
+      background-color: #ffffff;
       font-family: Arial, sans-serif;
-      color: #fff;
+      color: #333;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -22,7 +20,6 @@
       text-align: center;
       font-size: 28px;
       margin-top: 40px;
-      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     }
 
     .album-container {
@@ -35,32 +32,28 @@
 
     .album {
       width: 160px;
-      height: 160px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      overflow: hidden;
       text-align: center;
       text-decoration: none;
-      color: #fff;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: transform 0.2s;
-    }
-
-    .album:hover {
-      transform: scale(1.05);
+      color: #333;
+      font-weight: bold;
     }
 
     .album img {
-      width: 100%;
-      height: 100%;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .album:hover img {
+      transform: scale(1.05);
     }
 
     .album-label {
       margin-top: 8px;
-      font-weight: bold;
       font-size: 14px;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     }
 
     .home-link {
@@ -74,13 +67,13 @@
       color: #fff;
       font-size: 14px;
       padding: 10px 20px;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: #333;
       border-radius: 6px;
       transition: background-color 0.2s;
     }
 
     .home-link a:hover {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: #555;
     }
   </style>
 </head>
