@@ -7,22 +7,30 @@
   <style>
     body {
       margin: 0;
-      padding: 60px 20px;
+      padding: 0;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-color: #fff;
-      color: #333;
+      background-image: url('48fd98729a257360c0775631c31db387.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
       text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     h1 {
       font-size: 2em;
+      margin-top: 60px;
       margin-bottom: 40px;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     }
 
     .date-button {
       display: inline-block;
       padding: 12px 24px;
-      background-color: #444;
+      background-color: rgba(0, 0, 0, 0.7);
       color: #fff;
       text-decoration: none;
       border-radius: 8px;
@@ -32,19 +40,24 @@
     }
 
     .date-button:hover {
-      background-color: #666;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .spacer {
+      flex-grow: 1;
     }
 
     .back-home {
-      display: inline-block;
-      margin-top: 40px;
+      padding: 20px;
       text-decoration: none;
-      color: #666;
+      color: #fff;
       font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: block;
     }
 
     .back-home:hover {
-      text-decoration: underline;
+      background-color: rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
@@ -53,7 +66,8 @@
 
   <a href="xuan-20250502.html" class="date-button">2025.05.02</a>
 
-  <br>
-  <a href="album.html" class="back-home">← 返回相册</a>
+  <div class="spacer"></div>
+
+  <a href="album.html" class="back-home">返回相册</a>
 </body>
 </html>
