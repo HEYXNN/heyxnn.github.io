@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XUAN 相册</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IRENE - 夏天</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 60px 20px 100px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       background-color: #ffffff;
-      font-family: Arial, sans-serif;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
+      text-align: center;
     }
 
     h1 {
-      margin-top: 60px;
-      margin-bottom: 40px;
-      font-size: 24px;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
 
-    .date-button {
-      display: inline-block;
-      background-color: #000;
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+
+    .back-album {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
       color: #fff;
       padding: 10px 16px;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 16px;
-      margin-bottom: 60px;
-    }
-
-    .date-button:hover {
-      background-color: #444;
-    }
-
-    .back-home {
-      margin-top: auto;
-      margin-bottom: 20px;
-      text-decoration: none;
-      color: #000;
       font-size: 14px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .back-album:hover {
+      background-color: rgba(0, 0, 0, 0.8);
     }
   </style>
 </head>
 <body>
-  <h1>XUAN 的相册</h1>
+  <h1>IRENE - 傍晚</h1>
 
-  <a href="xuan-20250502.html" class="date-button">2025.05.02</a>
+  <div class="photo-grid">
+    <img src="d18e3245d4a645c04111b8f4efaca58c.jpeg" alt="夏天1">
+    <img src="e4205577156af3559c722ace65c5c6ea.jpeg" alt="夏天2">
+    <img src="e07291d699a4f87aaeaed41ff28d51d5.jpeg" alt="夏天3">
+  </div>
 
-  <a href="album.html" class="back-home">返回相册</a>
+  <a href="irene.html" class="back-album">返回</a>
 </body>
 </html>
