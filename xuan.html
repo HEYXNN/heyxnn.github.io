@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IRENE - 夏天</title>
+  <title>XUAN 的专辑</title>
   <style>
     body {
       margin: 0;
@@ -16,27 +16,27 @@
 
     h1 {
       font-size: 2em;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 0 10px;
-      max-width: 1000px;
-      margin: 0 auto;
+    .album-button {
+      display: inline-block;
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 14px 28px;
+      margin: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background-color 0.2s;
     }
 
-    .photo-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      object-fit: cover;
+    .album-button:hover {
+      background-color: #e0e0e0;
     }
 
-    .back-album {
+    .back-link {
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -48,21 +48,13 @@
       font-size: 14px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
-
-    .back-album:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
   </style>
 </head>
 <body>
-  <h1>IRENE - 傍晚</h1>
+  <h1>XUAN 的专辑</h1>
 
-  <div class="photo-grid">
-    <img src="d18e3245d4a645c04111b8f4efaca58c.jpeg" alt="夏天1">
-    <img src="e4205577156af3559c722ace65c5c6ea.jpeg" alt="夏天2">
-    <img src="e07291d699a4f87aaeaed41ff28d51d5.jpeg" alt="夏天3">
-  </div>
+  <a href="xuan-evening.html" class="album-button">傍晚</a>
 
-  <a href="irene.html" class="back-album">返回</a>
+  <a href="album.html" class="back-link">返回相册</a>
 </body>
 </html>
