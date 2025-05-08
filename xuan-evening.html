@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>傍晚 - XUAN</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -27,10 +28,15 @@
       margin: 0 auto;
     }
 
-    .photo-grid img {
+    .photo-grid a img {
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
+      transition: transform 0.2s;
+    }
+
+    .photo-grid a:hover img {
+      transform: scale(1.03);
     }
 
     .back-link {
@@ -51,11 +57,19 @@
   <h1>傍晚</h1>
 
   <div class="photo-grid">
-    <img src="06d6472d5ccd4aad940391f81d03ebbd.jpeg" alt="傍晚1" />
-    <img src="48fd98729a257360c0775631c31db387.jpeg" alt="傍晚2" />
-    <img src="cefe5a74f734ba49f5abd627e0af93c6.jpeg" alt="傍晚3" />
+    <a href="06d6472d5ccd4aad940391f81d03ebbd.jpeg" data-lightbox="evening" data-title="傍晚 1">
+      <img src="06d6472d5ccd4aad940391f81d03ebbd.jpeg" alt="傍晚1" />
+    </a>
+    <a href="48fd98729a257360c0775631c31db387.jpeg" data-lightbox="evening" data-title="傍晚 2">
+      <img src="48fd98729a257360c0775631c31db387.jpeg" alt="傍晚2" />
+    </a>
+    <a href="cefe5a74f734ba49f5abd627e0af93c6.jpeg" data-lightbox="evening" data-title="傍晚 3">
+      <img src="cefe5a74f734ba49f5abd627e0af93c6.jpeg" alt="傍晚3" />
+    </a>
   </div>
 
   <a href="xuan.html" class="back-link">返回</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
